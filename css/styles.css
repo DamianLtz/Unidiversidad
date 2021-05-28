@@ -1,0 +1,2293 @@
+html {
+    font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #161616;
+}
+
+.w-90 {
+    width: 90%;
+    margin: auto;
+}
+
+a:hover {
+    color: #202020;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    color: #282827;
+    font-family: 'Barlow', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.6rem;
+}
+
+h6 {
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.font-w400 {
+    font-weight: 400;
+}
+
+.font-w500 {
+    font-weight: 500;
+}
+
+.font-w600 {
+    font-weight: 600;
+}
+
+.font-w700 {
+    font-weight: 700;
+}
+
+.fsize-20 {
+    font-size: 2rem;
+}
+
+.img__adaptable {
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* ------------------ Cambios al Navbar y menú Hamburguesa de Bootstrap ------------------ */
+
+.navbar-toggler-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+}
+
+.navbar-light .navbar-toggler-icon:active {
+    background-image: url(../img/iconos/Cross.svg);
+}
+
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler:focus {
+    border-color: transparent;
+}
+
+.navbar>.container,
+.navbar>.container-fluid,
+.navbar>.container-lg,
+.navbar>.container-md,
+.navbar>.container-sm,
+.navbar>.container-xl,
+.navbar>.container-xxl {
+    justify-content: space-between;
+}
+
+/* ------------------ Enlaces, logo's y formulario del Navbar ------------------ */
+
+.nav__bg {
+    padding: 1.2rem 0;
+    background-color: #F4F3F3;
+}
+
+.ul__desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ul__desktop .nav-item>.nav-link {
+    padding: 0 1.2rem;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+.links__nav .nav-item>.nav-link {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 0.8rem 1.6rem;
+}
+
+.buscador__container {
+    display: flex;
+}
+
+.fecha__calendario__nav {
+    display: flex;
+    margin-left: 3rem;
+}
+
+.fecha__calendario__nav img {
+    width: 21px;
+}
+
+.fecha__calendario__nav p {
+    padding: 0.8rem;
+    font-size: 1.8rem;
+}
+
+.border__buscador {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.searchbox__home {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control {
+    border: none;
+    font-size: 1.6rem;
+}
+
+.form-control::placeholder {
+    vertical-align: text-bottom;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.6rem;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+/* Cambiar el color a los links del navbar según la pagina de la Web */
+
+.links__nav__color__1 .nav-item>.nav-link,
+.color__page__1 {
+    color: #EC3E8D;
+}
+
+.border__color__1 {
+    border: 1.5px solid #EC3E8D;
+}
+
+.nav-item>.nav-link:hover {
+    background-size: 100% 2px;
+}
+
+.links__nav__color__2 .nav-item>.nav-link,
+.color__page__2 {
+    color: #F3B007;
+}
+
+.border__color__2 {
+    border: 1.5px solid #F3B007;
+}
+
+.links__nav__color__3 .nav-item>.nav-link,
+.color__page__3 {
+    color: #47CCE2;
+}
+
+.border__color__3 {
+    border: 1.5px solid #47CCE2;
+}
+
+.links__nav__color__4 .nav-item>.nav-link,
+.color__page__4 {
+    color: #0B4D8C;
+}
+
+.border__color__4 {
+    border: 1.5px solid #0B4D8C;
+}
+
+.links__nav__color__5 .nav-item>.nav-link,
+.color__page__5 {
+    color: #EA5830;
+}
+
+.border__color__5 {
+    border: 1.5px solid #EA5830;
+}
+
+.border__color__6 {
+    border: 3px solid #CECECE;
+}
+
+/* ------------------ Boton Navbar ------------------ */
+
+.button {
+    font-size: 1.6rem;
+    display: inline-block;
+    padding: 0.6rem 0.8rem;
+    margin-left: 0.8rem;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+}
+
+.button:hover {
+    color: #ffffff;
+}
+
+.categorias__button li a {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #374A59;
+}
+
+/* Color de fondo al hacer Hover del boton "Categorias" según la pagina */
+
+.pink__button:hover {
+    background-color: #ec3e8d;
+}
+
+.teal__button:hover {
+    background-color: #3eacec;
+}
+
+.yellow__button:hover {
+    background-color: #F3B007;
+}
+
+.blue__button:hover {
+    background-color: #0B4D8C;
+}
+
+.orange__button:hover {
+    background-color: #EA5830;
+}
+
+/* ------------------ Tags Noticias ------------------ */
+
+.tag {
+    display: inline-block;
+    padding: 0.6rem 0.8rem;
+    border-radius: 8px;
+    max-width: 100%;
+    font-size: 1.6rem;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.tag__2 {
+    display: inline-block;
+    padding: 0.8rem;
+    margin-bottom: 1.6rem;
+    border-radius: 51px;
+    max-width: 100%;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.teal__tag {
+    background-color: #47CCE2;
+    border: 1.5px solid #47CCE2;
+}
+
+.yellow__tag {
+    background-color: #F3B007;
+    border: 1.5px solid #F3B007;
+}
+
+.pink__tag {
+    background-color: #EC3E8D;
+    border: 1.5px solid #EC3E8D;
+}
+
+.orange__tag {
+    background-color: #EA5830;
+    border: 1.5px solid #EA5830;
+}
+
+.brown__tag {
+    background-color: #D2AF94;
+    border: 1.5px solid #D2AF94;
+}
+
+.blue__tag {
+    background-color: #0B4D8C;
+    border: 1.5px solid #0B4D8C;
+}
+
+.white__tag {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    color: #282827;
+}
+
+/* ------------------ Main Section ------------------ */
+
+.section__bg {
+    background-image: url(../img/home/main/mainwall.png)
+}
+
+.noticia__destacada {
+    background: url(../img/home/main/noticia1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    height: 700px;
+    margin: 2.4rem 0;
+    position: relative;
+}
+
+/* Esta clase reduce el brillo de la noticia principal para que sea legible */
+
+.noticia__opacity {
+    background-color: rgb(22, 22, 22, 0.5);
+    height: 100%;
+    width: 100%;
+    padding: 3.2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.border__8{
+    border-radius: 8px;
+}
+
+.otras__noticias {
+    margin: 2.4rem 0;
+    height: 700px;
+    padding: 0 1.6rem
+}
+
+.otras__noticias__h3 {
+    margin: 2.4rem 0;
+    color: #ffffff;
+}
+
+.noticia__uno {
+    background-image: url(../img/home/main/noticia2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 345px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.noticia__dos {
+    background-image: url(../img/home/main/noticia3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 8px;
+    height: 345px;
+    position: relative;
+}
+
+/* ------------------ Sección Coronavirus ------------------ */
+
+.covid__background {
+    background-color: #009F95;
+}
+
+.covid__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.covid__box>.col-lg-4 {
+    width: 38%;
+}
+
+.covid__button {
+    background-color: #ffffff;
+    font-family: 'Barlow', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #009F95;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin: 3.2rem 0;
+    padding: 2.4rem 1.6rem;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.15));
+    transition: width 1s, height 1s, transform 0.35s;
+}
+
+.covid__button img {
+    padding-right: 1.6rem;
+}
+
+.covid__button:hover {
+    transform: scale(1.03);
+}
+
+/* ------------------ Sección Redes Sociales ------------------ */
+
+.titulo__redes {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 3.2rem;
+}
+
+.redes {
+    margin: 4.8rem 0;
+}
+
+.redes a {
+    font-family: 'Barlow', sans-serif;
+    border: 1px solid #CECECE;
+    border-radius: 8px;
+    padding: 1.6rem;
+    margin: 0.8rem 0;
+}
+
+.redes a p {
+    font-size: 2.4rem;
+}
+
+.redes a:hover {
+    filter: drop-shadow(1px 1px 1px rgba(73, 73, 73, 0.45));
+}
+
+.redes a>img {
+    padding: 0 0.8rem;
+}
+
+/* Colores del texto de las redes */
+
+.redes a:first-child p {
+    color: #CB39A7;
+}
+
+.redes a:nth-child(2) p {
+    color: #55ACEE;
+}
+
+.redes a:nth-child(3) p {
+    color: #395185;
+}
+
+.redes a:nth-child(4) p {
+    color: #FF0000;
+}
+
+/* ------------------ Seccion "Actualidad  & Podcast" ------------------ */
+
+.podcast__container .row .col-lg-6{
+    width: 49%;
+}
+
+.actualidad__bg {
+    background-color: #47CCE2;
+    border-radius: 8px;
+    padding: 2.4rem;
+}
+
+.img__actualidad {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px 0 0 8px;
+}
+
+.noticia__principal__actualidad{
+    width: 49%;
+}
+
+.texto__noticia__principal,.texto__noticia__actualidad {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 2.4rem;
+}
+
+.texto__noticia__principal{
+    border-radius: 0 0 8px 8px;
+}
+
+.texto__noticia__actualidad {
+    border-radius: 0px 8px 8px 0px;
+}
+
+.texto__noticia__actualidad>div {
+    padding-top: 1.6rem;
+}
+
+.border__noticia {
+    border: 2px solid #cecece;
+    border-radius: 8px;
+}
+
+.texto__noticia {
+    background-color: #ffffff;
+    border-radius: 0px 0px 8px 8px;
+    padding: 2.4rem;
+}
+
+.texto__noticia>h3 {
+    padding-bottom: 1.6rem;
+}
+
+.texto__noticia>p {
+    padding-bottom: 1.6rem;
+}
+
+.img__actualidad__principal{
+    border-radius: 8px 8px 0 0;
+}
+
+.podcast__bg {
+    background-color: #EC3E8D;
+    border-radius: 8px;
+    padding: 2.4rem;
+}
+
+.background__tag__nota {
+    margin: 0.8rem 0;
+    background-color: #EC3E8D;
+}
+
+.mojo__bg {
+    background-color: #EA5830;
+    border-radius: 8px;
+    padding: 2.4rem;
+}
+
+/* ------------------ Sección con menú de color de fondo ------------------ */
+
+/* Styles de las noticias con fondo de colores */
+
+.seccion__noticias__bg__1,
+.seccion__noticias__bg__2,
+.seccion__noticias__bg__3,
+.seccion__noticias__bg__4,
+.seccion__noticias__bg__5 {
+    border-radius: 10px;
+}
+
+.seccion__noticias__bg__1 {
+    background-color: #0B4D8C;
+}
+
+.seccion__noticias__bg__2 {
+    background-color: #EA5830;
+}
+
+.seccion__noticias__bg__3 {
+    background-color: #D2AF94;
+}
+
+.seccion__noticias__bg__4 {
+    background-color: #282827;
+}
+
+.seccion__noticias__bg__5 {
+    background-color: #BC043C;
+}
+
+
+.seccion__noticias,
+.seccion__noticias__2 {
+    padding: 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 3.2rem 0;
+}
+
+.seccion__noticias>h1,
+.seccion__noticias__2>h1 {
+    padding-bottom: 2.4rem;
+}
+
+.fecha__noticia {
+    display: flex;
+    align-items: center;
+    padding: 1.6rem;
+}
+
+.carrousel__mobile {
+    display: none;
+}
+
+.img__noticia {
+    max-width: 100%;
+    width: 100%;
+    max-height: 170px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.noticia__col__1 {
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.noticia__col__1>h3,
+.noticia__col__1>p {
+    padding: 0 1.6rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.fecha__noticia {
+    padding: 0 1.6rem 1.6rem 1.6rem;
+}
+
+.noticia__col__2>div {
+    width: 48%;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.noticia__col__2 .col-lg-6:nth-child(3),
+.noticia__col__2 .col-lg-6:nth-child(4) {
+    margin-top: 1.6rem;
+}
+
+.texto__noticias {
+    padding: 1.6rem;
+    background-color: #ffffff;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.texto__noticias>h4 {
+    padding-bottom: 3.2rem;
+}
+
+/* ------------------ La misma sección pero las propiedades son para las noticias en columnas de 3 ------------------ */
+
+.seccion__noticias__2 .noticia__col__1>.fsize-20 {
+    padding-top: 1.6rem;
+}
+
+.seccion__noticias__2 .noticia__col__1>h3,
+.seccion__noticias__2 .noticia__col__1>.fecha__noticia {
+    padding: 1.6rem;
+}
+
+.seccion__noticias__2 .noticia__col__1>h3,
+.seccion__noticias__2 .noticia__col__1>.fecha__noticia {
+    padding: 1.6rem;
+}
+
+/* ------------------ Sección Botones-Links ------------------ */
+
+.button__link__box {
+    margin: 4rem auto;
+}
+
+.button__link {
+    display: inline-block;
+    font-family: 'Barlow', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    --bs-gutter-y: 0;
+    margin-bottom: 1.6rem;
+    padding: 1.6rem 3.2rem;
+    border-radius: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* ------------ Sección Banner Publicitario ------------ */
+
+.banner {
+    max-width: 100%;
+    width: 970px;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Sección Cuadros */
+
+.cuadros {
+    margin: 3.2rem 0;
+}
+
+.cuadros>div {
+    margin: 0.8rem 0;
+}
+
+/* ------------------ Sección Noticia Destacada 2 ------------------ */
+
+.col__noticia__destacada {
+    position: relative;
+    background-image: url(../img/home/seccion__4__noticias/noticia__destacada__2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    height: 739px;
+    margin: 2.4rem 0;
+}
+
+.informe>h3 {
+    display: inline-block;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.detalles__informe>h2,
+.detalles__informe>p {
+    padding: 1.6rem 0;
+    width: 50%;
+}
+
+/* ------------------ Footer ------------------ */
+
+.footer__background__pink {
+    background-color: #EC3E8D;
+}
+
+.footer__background__teal {
+    background-color: #47CCE2;
+}
+
+.footer__background__yellow {
+    background-color: #EEC632;
+}
+
+.footer__background__cyan {
+    background-color: #47CCE2;
+}
+
+.footer__background__blue {
+    background-color: #0B4D8C;
+}
+
+.footer__background__orange {
+    background-color: #EA5830;
+}
+
+.footer__container {
+    display: flex;
+    padding: 4.8rem 1.6rem;
+}
+
+.footer__logo {
+    width: 228px;
+    height: 127px;
+}
+
+.footer__logo__titulo {
+    padding: 3.2rem 0 2rem 0;
+}
+
+.footer__logo__titulo p {
+    font-weight: 700;
+    text-align: start;
+}
+
+.footer__redessociales a {
+    padding: 0 0.8rem;
+}
+
+.footer__links {
+    margin: 2.4rem 0rem 0 2.4rem;
+}
+
+.footer__ul__1 li {
+    padding: 0.4rem;
+}
+
+.footer__ul__1 li a {
+    font-size: 2rem;
+    color: #282827;
+}
+
+.footer__ul__1 li a:hover,
+.footer__ul__1 li a:hover {
+    color: #faf9f9;
+}
+
+.footer__ul__2 li {
+    padding: 0.4rem;
+}
+
+.footer__ul__2 li a {
+    font-size: 2rem;
+    color: #282827;
+}
+
+.footer__ul__2 li a:hover,
+.footer__ul__2 li a:focus {
+    color: #faf9f9;
+}
+
+.footer__copyright {
+    padding-bottom: 3.2rem;
+}
+
+.footer__copyright p {
+    text-align: center;
+}
+
+/* ------------------ Color Invertido del texto en el footer Azul ------------------ */
+
+.footer__alt__color li a {
+    color: #faf9f9;
+}
+
+.footer__alt__color li a:hover,
+.footer__alt__color li a:focus {
+    color: #282827;
+}
+
+/* ------------------ Sección SinglePost ------------------ */
+
+.noticia__singlepost p {
+    font-size: 2rem;
+}
+
+.noticia__singlepost {
+    padding: 1.6rem;
+}
+
+.noticia__singlepost>div h1 {
+    padding: 5.6rem 0 1.6rem 0;
+}
+
+.noticia__singlepost>h3 {
+    padding: 3.2rem 0;
+    line-height: 54.4px
+}
+
+.fuente {
+    padding-bottom: 3.2rem;
+}
+
+.fuente div p {
+    font-size: 1.8rem;
+}
+
+.etiquetas {
+    padding: 3.2rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.etiquetas a {
+    border: 1.5px solid #71717A;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 1.6rem;
+    padding: 0.8rem;
+    margin: 0 0.8rem;
+}
+
+.noticia__relacionada__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px 0 0 8px;
+}
+
+.noticia__relacionada__texto {
+    padding: 2.4rem;
+    border-radius: 0 8px 8px 0;
+}
+
+.noticia__relacionada__texto>h3:nth-child(2) {
+    padding: 1.6rem 0;
+}
+
+.noticia__relacionada__texto>p {
+    padding-bottom: 1.6rem;
+}
+
+.noticia__relacionada__texto p {
+    font-size: 1.6rem;
+}
+
+.contacto__icons__desktop {
+    position: absolute;
+    top: 60px;
+    left: -50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto__icons {
+    display: flex;
+    align-items: center;
+    margin: 3.2rem 0;
+}
+
+.contacto__icons__desktop img {
+    padding: 1.6rem 0;
+}
+
+.contacto__icons img {
+    padding: 0 0.8rem;
+}
+
+.contacto__icons a:nth-child(3) {
+    padding-right: 0.8rem;
+}
+
+.contacto__icons a:nth-child(4) {
+    border-left: 1px #282827 solid;
+    padding-left: 0.8rem;
+}
+
+.fb-comments__css {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+}
+
+.titulo__noticias__cuadros {
+    padding: 3.2rem 0;
+}
+
+.titulo__noticias__cuadros>h1,
+.titulo__noticias__cuadros>h3 {
+    padding: 0 0 2.4rem 0.8rem;
+}
+
+.titulo__noticias__cuadros>p {
+    padding-left: 0.8rem;
+}
+
+.titulo__noticias__cuadros>h3 {
+    letter-spacing: 5px;
+}
+
+/* ------------------ Sección Señal U ------------------ */
+
+.señal__u__container {
+    margin: 3.2rem 0;
+    padding: 5.6rem 0;
+}
+
+.señalu__bg {
+    background-image: url(../img/señalU/main/mainwall.png);
+}
+
+.señal__u__logo {
+    padding-bottom: 1.6rem;
+}
+
+.links__señal__u {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 3.2rem;
+}
+
+.links__señal__u:hover {
+    color: #ec3e8d;
+}
+
+.bg__texto__señal__u {
+    background-color: rgb(22, 22, 22, 0.25);
+    backdrop-filter: blur(2px);
+    padding: 1.6rem;
+}
+
+.video__señal__u {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+.producciones__container__1>h1 {
+    padding: 1.6rem 0;
+}
+
+.producciones__container__1>h3 {
+    padding: 1.6rem 0;
+}
+
+/* ---- ----- ----- Contenedor Titulo y Controles del carousel (desktop) ----- ----- ----- */
+
+.contenedor-titulo-controles {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.contenedor-titulo-controles h3 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.contenedor-titulo-controles .indicadores button {
+    background: rgb(223, 223, 223);
+    height: 11px;
+    width: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    margin-right: 2px;
+    margin-bottom: 0.8rem;
+}
+
+.contenedor-titulo-controles .indicadores button:hover,
+.contenedor-titulo-controles .indicadores button.activo {
+    background: #ec3e8d;
+}
+
+
+/* ---- ----- ----- Contenedor Principal y Flechas del carousel (desktop) ----- ----- ----- */
+
+.peliculas-recomendadas {
+    margin-bottom: 70px;
+}
+
+.peliculas-recomendadas .contenedor-principal {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+    position: absolute;
+    border: none;
+    background: rgb(255, 255, 255);
+    height: 50px;
+    line-height: 40px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 500;
+    transition: .2s ease all;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda {
+    left: 0;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+    right: 0;
+}
+
+/* ---- ----- ----- Carousel ----- ----- ----- */
+.peliculas-recomendadas .contenedor-carousel {
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula {
+    min-width: 25%;
+    transition: .3s ease all;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula.hover {
+    transform: scale(1.2);
+    transform-origin: center;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: top;
+}
+
+/* ------------------ Carousel Mobile ------------------ */
+
+.button__prev-icon {
+    opacity: 1;
+    background-color: #ffffff;
+}
+
+.button__next-icon {
+    background-color: #ffffff;
+    opacity: 1
+}
+
+.prev-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255, .9);
+    background-image: none;
+}
+
+.next-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255, .9);
+    background-image: none;
+}
+
+.button__prev__icon__2,
+.button__next__icon__2 {
+    opacity: 1
+}
+
+/* ------------------ Pagina Radio U ------------------ */
+
+.carousel__img {
+    height: 480px;
+    object-fit: cover;
+}
+
+.next-prev__radio__u {
+    width: 10%;
+    z-index: 20;
+}
+
+.next-prev__radio__u .carousel-control-next-icon,
+.next-prev__radio__u .carousel-control-prev-icon {
+    width: 3.2rem;
+    height: 3.2rem;
+}
+
+.links__radio__u {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 3.2rem;
+}
+
+.links__radio__u:hover {
+    color: #47CCE2;
+}
+
+.downloadapp {
+    background-color: #47CCE2;
+    padding: 1.6rem;
+    transition: width 1s, height 1s, transform 0.35s;
+}
+
+.downloadapp p {
+    color: #ececec;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+/* ----------------------- Radio U: Podcast ----------------------- */
+
+.border__categorias {
+    border: 3px solid #EEC632;
+    border-radius: 8px;
+    padding: 2.4rem;
+}
+
+.container__podcast {
+    justify-content: space-between;
+}
+
+.container__podcast>.col-lg-4 {
+    width: 32%;
+    margin: 1.6rem 0;
+}
+
+/* ------------------ Sección U Deportivo ------------------ */
+
+.video__u__deportivo__container {
+    padding: 4.8rem 0;
+}
+
+.video__u__deportivo__comentarios {
+    padding: 4.8rem 0;
+}
+
+.video__u__deportivo__container iframe {
+    width: 953px;
+    height: 538px;
+}
+
+.title__suplementario {
+    padding: 3.2rem 0.75rem 0 0;
+}
+
+.title__suplementario>h1 {
+    color: #47CCE2;
+}
+
+/* --------------- Sección U Academico --------------- */
+
+.bg__u__academico {
+    background-image: url(../img/uacademico/main/bg__u__academico.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.uacademico__container {
+    justify-content: space-between;
+    padding: 3.2rem 0;
+}
+
+.logo__u__academico__container {
+    padding-bottom: 3.2rem;
+}
+
+.uacademico__container .col-lg-5 {
+    width: 40%;
+}
+
+.img__noticias__uacademico {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.texto__noticias__uacademico {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+.texto__noticias__uacademico>img {
+    border-radius: 8px 8px 0 0;
+}
+
+.texto__noticias__uacademico>h3 {
+    padding: 0 1.6rem;
+}
+
+.texto__noticias__uacademico>div {
+    padding: 0 1.6rem 1.6rem 1.6rem;
+}
+
+.texto__noticias__uacademico>p {
+    padding: 0 1.6rem;
+}
+
+/* Estilos para las 3 noticias en filas */
+
+.noticias__row__academico .row:nth-child(2) {
+    margin: 2rem 0;
+}
+
+.texto__noticias__uacademico__2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0 8px 8px 0;
+}
+
+.texto__noticias__uacademico__2>p {
+    padding: 0 1.6rem 1.2rem 1.6rem;
+}
+
+.texto__noticias__uacademico__2>div {
+    padding: 0 1.6rem;
+}
+
+/* Form U Academico */
+
+.container__button__u__academico__verde {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button__u__academico__verde {
+    background-color: #5AB05A;
+    border-radius: 8px;
+    padding: 1.6rem 3.2rem;
+    margin: 2.4rem 0;
+    display: inline-block;
+}
+
+.button__categorias {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button__u__academico__verde p {
+    font-weight: 700;
+    color: #f5f5f5;
+}
+
+.border__buscador__2 {
+    display: flex;
+    align-items: center;
+    border-radius: 24px;
+    padding: 1.6rem;
+    background-color: #ffffff;
+}
+
+.form-control-uacademico {
+    border: none;
+    font-size: 2.4rem;
+}
+
+.form-control-uacademico::placeholder {
+    vertical-align: text-bottom;
+    font-family: 'Barlow', sans-serif;
+    font-size: 2.4rem;
+}
+
+.button__u__academico {
+    font-size: 2.4rem;
+    display: inline-block;
+    padding: 2rem 3.2rem;
+    margin-left: 0.8rem;
+    border-radius: 24px;
+    background-color: #ffffff;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    color: #3d3d3d;
+    border: 3px solid #cecece;
+}
+
+.opciones__categorias {
+    font-size: 2.4rem;
+}
+
+/* ------------------ Sección Listado Categorias ------------------ */
+
+
+.main__noticia {
+    height: 100vh;
+    margin-top: 3.2rem;
+}
+
+.titulo__listado__categorias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5.6rem;
+    height: 100%;
+}
+
+.curva__noticia {
+    position: absolute;
+    bottom: -2px;
+    z-index: 20;
+}
+
+.titulo__listado__categorias>h2 {
+    letter-spacing: 10px;
+}
+
+.titulo__listado__categorias>h1 {
+    font-size: 56px;
+    padding: 4rem 0;
+}
+
+.titulo__listado__categorias>p {
+    font-size: 2rem;
+}
+
+/* ------------------ Sección Resultado Búsqueda ------------------ */
+
+.button__categorias-ordenar {
+    display: flex;
+    justify-content: center;
+}
+
+.buscador__resultado {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.img__princ__resultado__busqueda {
+    height: auto;
+    min-height: 484px;
+    object-fit: cover;
+}
+
+/* ------------------ Sección Edicion U ------------------ */
+
+.container__edicionu {
+    justify-content: space-between;
+}
+
+.container__edicionu>.col-lg-6 {
+    width: 49%;
+}
+
+.img__cuadros__edicion__u {
+    border-radius: 8px 0 0 8px;
+}
+
+.texto__cuadros__edicionu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 1.6rem;
+}
+
+.texto__cuadros__edicionu>h5 {
+    font-size: 2rem;
+}
+
+.texto__cuadros__edicionu>h5,
+.texto__cuadros__edicionu>p {
+    padding-bottom: 1.6rem;
+}
+
+.paginas a {
+    font-size: 2rem;
+    margin: 0 1.6rem;
+}
+
+.pagina__activa {
+    color: #47CCE2;
+}
+
+.previous {
+    font-size: 2rem;
+    color: #A1A1AA;
+}
+
+.next {
+    font-size: 2rem;
+    color: #47CCE2;
+}
+
+/* ------------------ Secciónes de Señal U ------------------ */
+
+/* El Canal */
+
+.canal {
+    padding: 3.2rem 0;
+    color: #EA5830;
+    font-size: 5.6rem;
+    text-align: center;
+}
+
+.texto__señal__u p {
+    font-size: 2rem;
+    padding: 0.8rem 0;
+}
+
+.lista__propuestas,
+.lista__propuestas li {
+    list-style: disc;
+}
+
+.lista__propuestas {
+    padding: 1.6rem 3.2rem;
+}
+
+.lista__propuestas p {
+    font-size: 2rem;
+}
+
+/* Presentaciones de proyectos */
+
+.presentacion__container {
+    padding: 4.8rem 0;
+}
+
+.texto__formulario {
+    line-height: 34px;
+}
+
+.button__presentaciones {
+    padding: 1.6rem;
+}
+
+/* Programación: Señal U */
+
+.radio__container {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 2.4rem;
+}
+
+.links__radio li {
+    padding: 0 0.8rem;
+}
+
+.links__radio li a {
+    font-size: 2.4rem;
+}
+
+.link__radio__active {
+    font-weight: 700;
+}
+
+.titulo__noticias__cuadros>p {
+    font-size: 2.4rem;
+}
+
+.img__carousel__señal__u {
+    max-width: 100%;
+    width: 400px;
+    height: 270px;
+    object-fit: cover;
+}
+
+.icon__width {
+    width: 5%;
+}
+
+.video__container {
+    transition: width 1s, height 1s, transform 0.35s;
+}
+
+.video__container:hover {
+    transform: scale(1.05);
+}
+
+.contenido__video {
+    position: absolute;
+    top: 0;
+    max-width: 100%;
+    width: 400px;
+    height: 270px;
+    padding: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    opacity: 0;
+}
+
+.duracion {
+    font-size: 1.8rem;
+    border-radius: 4px;
+    padding: 0.4rem;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.contenido__video:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+/* ---------------- Grilla Horaria -------------- */
+
+.horarios__container {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.container__empty {
+    width: 169px;
+    height: 67px;
+    border: 1px solid #cecece;
+}
+
+.horarios__subcontainer h4,
+.horarios__subcontainer h5,
+.dia p {
+    width: 169px;
+    height: 67px;
+    border: 1px solid #cecece;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.horarios__subcontainer h4,
+.horarios__subcontainer h5 {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.horarios__subcontainer h5 {
+    text-align: center;
+}
+
+.dia {
+    display: flex;
+    flex-direction: column;
+}
+
+.dia p {
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+}
+
+.programacion p {
+    display: flex;
+    align-items: center;
+    width: 169px;
+    height: 67px;
+    padding: 1.6rem 0.8rem;
+    border: 1px solid #cecece;
+}
+
+/* Color del texto "Ahora" y el fondo de los días */
+
+.ahora__color__1 {
+    color: #EC3E8D;
+}
+
+.ahora__color__2 {
+    color: #47CCE2;
+}
+
+.ahora__color__4 {
+    color: #0B4D8C;
+}
+
+.dia__color__1 {
+    background-color: #EC3E8D;
+}
+
+.dia__color__2 {
+    background-color: #47CCE2;
+}
+
+.dia__color__4 {
+    background-color: #0B4D8C;
+}
+
+/* ------------------ Secciónes de Radio U ------------------ */
+
+/* Nuestro Staff */
+
+.staff {
+    padding: 3.2rem 0;
+    font-size: 5.6rem;
+    text-align: center;
+}
+
+.lista__staff {
+    padding-top: 1.6rem;
+    padding-left: 3.2rem;
+}
+
+.lista__staff li {
+    list-style: disc;
+}
+
+.lista__staff li p {
+    font-size: 2rem;
+}
+
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+
+@media (max-width: 991px) {
+
+    /* ------------------ Navbar -> Fecha y Buscador ------------------ */
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1030;
+        padding: 0.8rem 1.6rem;
+        background-color: #ffffff;
+        box-shadow: rgba(3, 3, 3, 0.2) 0px 3px 8px
+    }
+
+    .navbar__vh-100 {
+        height: 100vh;
+    }
+
+    .buscador__container {
+        flex-direction: column;
+    }
+
+    .searchbox__home>div:first-child {
+        order: 2;
+    }
+
+    .searchbox__home>div:nth-child(2) {
+        order: 1;
+        width: 70%;
+    }
+
+    .logo {
+        width: 65px;
+        height: 35px;
+    }
+
+    .button {
+        margin-left: 0;
+    }
+
+    .fecha__calendario__nav {
+        margin-left: 2rem;
+    }
+
+    .border__buscador {
+        margin: 1.6rem 0;
+    }
+
+    .links__nav>.nav-item {
+        padding: 1.2rem 0;
+    }
+
+    .links__nav .nav-item>.nav-link {
+        font-size: 2rem;
+        padding: 0;
+    }
+
+    /* ------------------ Main ------------------ */
+
+    main {
+        margin-top: 5.6rem;
+    }
+
+    .noticia__destacada {
+        margin: 2.4rem 0 0 0;
+        height: 390px;
+    }
+
+    .otras__noticias {
+        padding: 0;
+        margin: 1rem 0;
+    }
+
+    .covid__icon {
+        display: none;
+    }
+
+    .covid__box>.col-lg-4 {
+        width: 100%;
+    }
+
+    .covid__button {
+        padding: 1.6rem;
+    }
+
+    .covid__button>p {
+        font-size: 1.6rem;
+    }
+
+    .titulo__redes {
+        font-size: 2.4rem;
+    }
+
+    /* ------------------ Sección Actualidad y Podcast ------------------ */
+
+    .noticia__principal__actualidad{
+        width: 100%;
+    }
+
+    .img__actualidad {
+        border-radius: 8px 8px 0 0;
+    }
+
+    .img__actualidad__principal{
+        border-radius: 8px 8px 0 0;
+    }
+
+    .texto__noticia__actualidad {
+        border-radius: 0px 0px 8px 8px;
+    }
+
+    .podcast__container .row .col-lg-6 {
+        width: 100%;
+    }
+
+    .podcast__container>h1 {
+        padding-bottom: 0.8rem;
+    }
+
+    /* ------------------ Sección Noticias con menú de color de fondo ------------------ */
+
+    .noticia__col__1 {
+        width: 100%;
+    }
+
+    .noticia__col__1>h3 {
+        padding-top: 1.6rem;
+    }
+
+    .noticia__col__1>p,
+    .noticia__col__1>.fecha__noticia {
+        padding: 0.8rem 1.6rem;
+    }
+
+    .noticia__col__2>div {
+        margin-top: 1.6rem;
+        width: 100%;
+    }
+
+    .seccion__noticias__2 .col-lg-4:nth-child(2),
+    .seccion__noticias__2 .col-lg-4:nth-child(3) {
+        margin-top: 1.6rem;
+    }
+
+    /* ------------------ Sección Links Internos ------------------ */
+
+    .box__noticias__1 {
+        width: 100%;
+    }
+
+    .button__link__box {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Imagenes cuadradas clickeables */
+
+    .cuadros>div {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    /* ------------------ Sección Noticias Destacada 2 ------------------ */
+
+    .col__noticia__destacada {
+        height: 640px;
+        position: relative;
+    }
+
+    .detalles__informe>h2,
+    .detalles__informe>p {
+        width: 100%;
+    }
+
+    /* ------------------ Footer ------------------ */
+
+    .footer__links {
+        display: none;
+    }
+
+    .footer__container {
+        justify-content: center;
+    }
+
+    .footer__col__1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* ------------------ Sección SinglePost ------------------ */
+
+    .fuente div {
+        flex-wrap: wrap;
+    }
+
+    .etiquetas {
+        flex-wrap: wrap;
+    }
+
+    .etiquetas a {
+        margin: 0.8rem;
+    }
+
+    /* ------------------ Sección Señal U ------------------ */
+
+    .video__señal__u {
+        height: 360px;
+        margin: 1.6rem 0;
+    }
+
+    /* Carousel de Radio U */
+
+    .carousel__img {
+        height: 225px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .carousel__container {
+        margin: 3.2rem 0;
+    }
+
+
+    /* ----------------------- Radio U: Podcast ----------------------- */
+
+    .border__categorias {
+        border: 3px solid #EEC632;
+        border-radius: 8px;
+        padding: 2.4rem;
+    }
+
+    .container__podcast {
+        justify-content: center;
+    }
+
+    .container__podcast>.col-lg-4 {
+        width: 100%;
+    }
+
+    /* ------------------ Sección U Deportivo ------------------ */
+
+    .video__u__deportivo__container {
+        padding: 3.2rem 0;
+    }
+
+    .video__u__deportivo__container iframe {
+        width: 100%;
+        height: 480px;
+    }
+
+    /* ------------------ Sección U Academico ------------------ */
+
+
+    .uacademico__container .col-lg-5 {
+        width: 100%;
+    }
+
+    .img__noticias__uacademico {
+        border-radius: 8px 8px 0 0;
+    }
+
+    .texto__noticias__uacademico {
+        border-radius: 8px
+    }
+
+    .texto__noticias__uacademico>h3 {
+        padding: 2.4rem 1.6rem 0 1.6rem;
+    }
+
+    .texto__noticias__uacademico>div {
+        padding: 0 1.6rem 1.6rem 1.6rem;
+    }
+
+    .texto__noticias__uacademico>p {
+        padding: 1.6rem;
+    }
+
+    .noticias__row__academico .row:first-child {
+        margin-top: 1.6rem;
+    }
+
+    .noticias__row__academico .row:nth-child(2) {
+        margin: 1.6rem 0;
+    }
+
+    .texto__noticias__uacademico__2 {
+        border-radius: 0 0 8px 8px;
+    }
+
+    .texto__noticias__uacademico__2>p {
+        padding: 1.6rem 1.6rem 0 1.6rem;
+    }
+
+    .texto__noticias__uacademico__2>div {
+        padding: 1.6rem;
+    }
+
+    .button__categorias {
+        margin-top: 2.4rem;
+        justify-content: center;
+    }
+
+    .form-control-uacademico {
+        font-size: 1.8rem;
+        padding-left: 2.4rem;
+    }
+
+    .form-control-uacademico::placeholder,
+    .button__u__academico,
+    .opciones__categorias {
+        font-size: 1.8rem;
+    }
+
+    /* ----------------------- Listado Categorias ----------------------- */
+
+    .img__princ__listado__categorias {
+        height: auto;
+        min-height: 440px;
+        object-fit: cover;
+    }
+
+    .titulo__listado__categorias {
+        padding: 1.6rem;
+    }
+
+    .titulo__listado__categorias>h1,
+    .titulo__listado__categorias>h2,
+    .titulo__listado__categorias>p {
+        text-align: center;
+    }
+
+    .titulo__listado__categorias>h2 {
+        font-size: 2rem;
+    }
+
+    .titulo__listado__categorias>h1 {
+        font-size: 40px;
+        padding: 4rem 0;
+    }
+
+    .titulo__listado__categorias>p {
+        font-size: 1.8rem;
+    }
+
+    /* ------------------ Sección Resultado Búsqueda ------------------ */
+
+    .button__categorias-ordenar {
+        justify-content: space-evenly;
+        padding: 3.2rem 0;
+    }
+
+    /* ------------------ Sección Edicion U ------------------ */
+
+    .img__cuadros__edicion__u {
+        height: 370px;
+    }
+
+    .container__edicionu>.col-lg-6 {
+        width: 100%;
+    }
+
+    .img__cuadros__edicion__u {
+        border-radius: 8px 8px 0 0;
+    }
+
+    .paginas a {
+        font-size: 1.6rem;
+        margin: 0 0.8rem;
+    }
+
+    .previous {
+        font-size: 1.6rem;
+        color: #A1A1AA;
+    }
+
+    .next {
+        font-size: 1.6rem;
+        color: #47CCE2;
+    }
+
+    /* ------------------ Secciónes de Señal U ------------------ */
+
+    /* Programación: Señal U */
+
+    .radio__container {
+        justify-content: center;
+    }
+
+    .links__radio li a {
+        font-size: 1.8rem;
+    }
+
+    .titulo__noticias__cuadros>p {
+        font-size: 1.8rem;
+    }
+
+    /* Grilla Horaria */
+
+    .container__empty,
+    .horarios__subcontainer h4,
+    .horarios__subcontainer h5,
+    .dia p,
+    .programacion p {
+        width: 82px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .noticia__opacity {
+        background-color: rgb(22, 22, 22, 0.35);
+    }
+
+    /* Sección Redes Sociales */
+
+    .redes {
+        margin: 4.8rem 0;
+    }
+
+    .redes a {
+        border: none;
+        font-size: 1.6rem;
+        padding: 0.8rem;
+        margin: 0.8rem 0
+    }
+
+    /* Carrousel Noticias */
+
+    .carrousel__mobile {
+        display: block;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+
+    .carrousel__noticia__container {
+        padding: 1.6rem 3.2rem;
+    }
+
+    .title__carrousel {
+        padding: 1.6rem 2.4rem 0 2.4rem;
+        color: #ffffff;
+    }
+
+    .img__carrousel {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding: 1.6rem 2.4rem 0 2.4rem;
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .noticia__carrousel {
+        background-color: #ffffff;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        padding: 2.4rem;
+        margin: 0 2.4rem 3.2rem 2.4rem;
+    }
+
+    .noticia__carrousel>h4 {
+        padding: 1.6rem 0;
+    }
+
+    .button__next__icon__1,
+    .button__prev__icon__1 {
+        width: 0;
+        height: 0;
+    }
+
+    /* ------------------ Sección SinglePost ------------------ */
+
+    .contacto__icons {
+        justify-content: center;
+    }
+
+    /* ------------------ Sección Señal U ------------------ */
+
+    .video__señal__u {
+        height: 240px;
+    }
+
+    /* ------------------ Sección U Deportivo ------------------ */
+
+    .video__u__deportivo__container {
+        padding: 2.4rem 0;
+    }
+
+    .video__u__deportivo__container iframe {
+        width: 100%;
+        height: 269px;
+    }
+
+    /* ------------------ Sección U Academico ------------------ */
+
+    .container__button__u__academico__verde {
+        justify-content: center;
+    }
+
+    /* ------------------ Sección Resultado Búsqueda ------------------ */
+
+    .button__categorias-ordenar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buscador__resultado {
+        position: absolute;
+        top: 10%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+}
