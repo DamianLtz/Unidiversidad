@@ -1,14 +1,9 @@
-html {
-    font-size: 62.5%;
+:root{
+    --font--proyect: 'Barlow', sans-serif;
+    --font--color: #282827;
+    --font--weight: 700
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
 .navbar-expand-lg .navbar-nav .nav-link {
     padding: 0;
     margin: 0;
@@ -18,14 +13,14 @@ a {
     text-decoration: none;
 }
 
-li,
-ul {
+.li-reset,
+.ul-reset {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.row {
+.reset {
     margin: 0;
     padding: 0;
 }
@@ -44,54 +39,39 @@ a:hover {
     color: #202020;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a {
-    color: #282827;
-    font-family: 'Barlow', sans-serif;
+h1,h2,h3,h4,h5,h6,p,a{
+    font-family: var(--font--proyect);
+    color: var(--font--color);
+    margin: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1,h2,h3,h4,h5 {
     font-weight: 700;
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
 }
 
-h2 {
-    font-size: 3.2rem;
-}
-
-h3 {
-    font-size: 2.4rem;
-}
-
-h4 {
+h2{
     font-size: 2rem;
 }
 
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
 h5 {
-    font-size: 1.6rem;
+    font-size: 1rem;
 }
 
 h6 {
     font-weight: 400;
-    font-size: 1.8rem;
-}
-
-p {
-    font-weight: 400;
-    font-size: 1.6rem;
+    font-size: 1.125rem;
 }
 
 .font-w400 {
@@ -111,7 +91,7 @@ p {
 }
 
 .fsize-20 {
-    font-size: 2rem;
+    font-size: 1.25rem;
 }
 
 .img__adaptable {
@@ -124,45 +104,26 @@ p {
 /* ------------------ Cambios al Navbar y menú Hamburguesa de Bootstrap ------------------ */
 
 .navbar-toggler-icon {
-    width: 2.4rem;
-    height: 2.4rem;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .navbar-collapse {
     flex-grow: 0;
 }
 
-.navbar-light .navbar-toggler {
+.navbar-light .navbar-toggler,.navbar-toggler:focus {
     border-color: transparent;
 }
-
-.navbar-light .navbar-toggler-icon:active {
-    background-image: url(../img/iconos/Cross.svg);
-}
-
 
 .navbar-toggler:focus {
     box-shadow: none;
 }
 
-.navbar-toggler:focus {
-    border-color: transparent;
-}
-
-.navbar>.container,
-.navbar>.container-fluid,
-.navbar>.container-lg,
-.navbar>.container-md,
-.navbar>.container-sm,
-.navbar>.container-xl,
-.navbar>.container-xxl {
-    justify-content: space-between;
-}
-
 /* ------------------ Enlaces, logo's y formulario del Navbar ------------------ */
 
 .nav__bg {
-    padding: 1.2rem 0;
+    padding: 0.75rem 0;
     background-color: #F4F3F3;
 }
 
@@ -173,9 +134,9 @@ p {
 }
 
 .ul__desktop .nav-item>.nav-link {
-    padding: 0 1.2rem;
+    padding: 0 0.75rem;
     font-family: 'Barlow', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.125rem;
     font-weight: 500;
     text-decoration: none;
     background-image: linear-gradient(currentColor, currentColor);
@@ -186,10 +147,9 @@ p {
 }
 
 .links__nav .nav-item>.nav-link {
-    font-family: 'Barlow', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.125rem;
     font-weight: 500;
-    padding: 0.8rem 1.6rem;
+    padding: 0.5rem 1rem;
 }
 
 .buscador__container {
@@ -198,7 +158,7 @@ p {
 
 .fecha__calendario__nav {
     display: flex;
-    margin-left: 3rem;
+    margin-left: 1.875rem;
 }
 
 .fecha__calendario__nav img {
@@ -206,8 +166,8 @@ p {
 }
 
 .fecha__calendario__nav p {
-    padding: 0.8rem;
-    font-size: 1.8rem;
+    padding: 0.5rem;
+    font-size: 1.125rem;
 }
 
 .border__buscador {
@@ -223,13 +183,13 @@ p {
 
 .form-control {
     border: none;
-    font-size: 1.6rem;
+    font-size: 1rem;
 }
 
 .form-control::placeholder {
     vertical-align: text-bottom;
     font-family: 'Barlow', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1rem;
 }
 
 .form-control:focus {
@@ -295,10 +255,10 @@ p {
 /* ------------------ Boton Navbar ------------------ */
 
 .button {
-    font-size: 1.6rem;
+    font-size: 1rem;
     display: inline-block;
-    padding: 0.6rem 0.8rem;
-    margin-left: 0.8rem;
+    padding: 0.6rem 0.5rem;
+    margin-left: 0.5rem;
     border-radius: 5px;
     background-color: #ffffff;
     font-family: 'Barlow', sans-serif;
@@ -310,7 +270,7 @@ p {
 }
 
 .categorias__button li a {
-    font-size: 1.6rem;
+    font-size: 1rem;
     font-weight: 700;
     color: #374A59;
 }
@@ -341,10 +301,10 @@ p {
 
 .tag {
     display: inline-block;
-    padding: 0.6rem 0.8rem;
+    padding: 0.5rem 0.5rem;
     border-radius: 8px;
     max-width: 100%;
-    font-size: 1.6rem;
+    font-size: 1rem;
     font-family: 'Barlow', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
@@ -353,11 +313,11 @@ p {
 
 .tag__2 {
     display: inline-block;
-    padding: 0.8rem;
-    margin-bottom: 1.6rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
     border-radius: 51px;
     max-width: 100%;
-    font-size: 1.4rem;
+    font-size: 1rem;
     letter-spacing: 1px;
     font-family: 'Barlow', sans-serif;
     font-weight: 700;
@@ -414,7 +374,7 @@ p {
     background-size: cover;
     border-radius: 8px;
     height: 700px;
-    margin: 2.4rem 0;
+    margin: 1rem 0;
     position: relative;
 }
 
@@ -424,7 +384,7 @@ p {
     background-color: rgb(22, 22, 22, 0.5);
     height: 100%;
     width: 100%;
-    padding: 3.2rem;
+    padding: 2rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -436,13 +396,13 @@ p {
 }
 
 .otras__noticias {
-    margin: 2.4rem 0;
+    margin: 1rem 0;
     height: 700px;
-    padding: 0 1.6rem
+    padding: 0 1rem
 }
 
 .otras__noticias__h3 {
-    margin: 2.4rem 0;
+    margin: 1.5rem 0;
     color: #ffffff;
 }
 
@@ -457,7 +417,7 @@ p {
     flex-direction: column;
     justify-content: flex-end;
     height: 345px;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     position: relative;
 }
 
@@ -494,21 +454,21 @@ p {
 .covid__button {
     background-color: #ffffff;
     font-family: 'Barlow', sans-serif;
-    font-size: 2rem;
+    font-size: 1.25rem;
     font-weight: 700;
     color: #009F95;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    margin: 3.2rem 0;
-    padding: 2.4rem 1.6rem;
+    margin: 2rem 0;
+    padding: 1.5rem 1rem;
     filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.15));
     transition: width 1s, height 1s, transform 0.35s;
 }
 
 .covid__button img {
-    padding-right: 1.6rem;
+    padding-right: 1rem;
 }
 
 .covid__button:hover {
@@ -520,23 +480,23 @@ p {
 .titulo__redes {
     text-align: center;
     margin-top: 4rem;
-    font-size: 3.2rem;
+    font-size: 2rem;
 }
 
 .redes {
-    margin: 4.8rem 0;
+    margin: 3rem 0;
 }
 
 .redes a {
     font-family: 'Barlow', sans-serif;
     border: 1px solid #CECECE;
     border-radius: 8px;
-    padding: 1.6rem;
-    margin: 0.8rem 0;
+    padding: 1rem;
+    margin: 0.5rem 0;
 }
 
 .redes a p {
-    font-size: 2.4rem;
+    font-size: 1.5rem;
 }
 
 .redes a:hover {
@@ -544,7 +504,7 @@ p {
 }
 
 .redes a>img {
-    padding: 0 0.8rem;
+    padding: 0 0.5rem;
 }
 
 /* Colores del texto de las redes */
@@ -574,7 +534,7 @@ p {
 .actualidad__bg {
     background-color: #47CCE2;
     border-radius: 8px;
-    padding: 2.4rem;
+    padding: 1.5rem;
 }
 
 .img__actualidad {
@@ -593,7 +553,7 @@ p {
     flex-direction: column;
     justify-content: space-between;
     background-color: #ffffff;
-    padding: 2.4rem;
+    padding: 1.5rem;
 }
 
 .texto__noticia__principal{
@@ -605,7 +565,7 @@ p {
 }
 
 .texto__noticia__actualidad>div {
-    padding-top: 1.6rem;
+    padding-top: 1rem;
 }
 
 .border__noticia {
@@ -616,15 +576,15 @@ p {
 .texto__noticia {
     background-color: #ffffff;
     border-radius: 0px 0px 8px 8px;
-    padding: 2.4rem;
+    padding: 1.5rem;
 }
 
 .texto__noticia>h3 {
-    padding-bottom: 1.6rem;
+    padding-bottom: 1rem;
 }
 
 .texto__noticia>p {
-    padding-bottom: 1.6rem;
+    padding-bottom: 1rem;
 }
 
 .img__actualidad__principal{
@@ -634,18 +594,18 @@ p {
 .podcast__bg {
     background-color: #EC3E8D;
     border-radius: 8px;
-    padding: 2.4rem;
+    padding: 1.5rem;
 }
 
 .background__tag__nota {
-    margin: 0.8rem 0;
+    margin: 0.5rem 0;
     background-color: #EC3E8D;
 }
 
 .mojo__bg {
     background-color: #EA5830;
     border-radius: 8px;
-    padding: 2.4rem;
+    padding: 1.5rem;
 }
 
 /* ------------------ Sección con menú de color de fondo ------------------ */
@@ -683,21 +643,21 @@ p {
 
 .seccion__noticias,
 .seccion__noticias__2 {
-    padding: 2.4rem;
+    padding: 1.5rem;
     display: flex;
     justify-content: space-between;
-    margin: 3.2rem 0;
+    margin: 2rem 0;
 }
 
 .seccion__noticias>h1,
 .seccion__noticias__2>h1 {
-    padding-bottom: 2.4rem;
+    padding-bottom: 1.5rem;
 }
 
 .fecha__noticia {
     display: flex;
     align-items: center;
-    padding: 1.6rem;
+    padding: 1rem;
 }
 
 .carrousel__mobile {
@@ -723,12 +683,12 @@ p {
 
 .noticia__col__1>h3,
 .noticia__col__1>p {
-    padding: 0 1.6rem;
+    padding: 0 1rem;
     background-color: rgb(255, 255, 255);
 }
 
 .fecha__noticia {
-    padding: 0 1.6rem 1.6rem 1.6rem;
+    padding: 0 1rem 1rem 1rem;
 }
 
 .noticia__col__2>div {
@@ -739,50 +699,50 @@ p {
 
 .noticia__col__2 .col-lg-6:nth-child(3),
 .noticia__col__2 .col-lg-6:nth-child(4) {
-    margin-top: 1.6rem;
+    margin-top: 1rem;
 }
 
 .texto__noticias {
-    padding: 1.6rem;
+    padding: 1rem;
     background-color: #ffffff;
     border-radius: 0px 0px 8px 8px;
 }
 
 .texto__noticias>h4 {
-    padding-bottom: 3.2rem;
+    padding-bottom: 2rem;
 }
 
 /* ------------------ La misma sección pero las propiedades son para las noticias en columnas de 3 ------------------ */
 
 .seccion__noticias__2 .noticia__col__1>.fsize-20 {
-    padding-top: 1.6rem;
+    padding-top: 1rem;
 }
 
 .seccion__noticias__2 .noticia__col__1>h3,
 .seccion__noticias__2 .noticia__col__1>.fecha__noticia {
-    padding: 1.6rem;
+    padding: 1rem;
 }
 
 .seccion__noticias__2 .noticia__col__1>h3,
 .seccion__noticias__2 .noticia__col__1>.fecha__noticia {
-    padding: 1.6rem;
+    padding: 1rem;
 }
 
 /* ------------------ Sección Botones-Links ------------------ */
 
 .button__link__box {
-    margin: 4rem auto;
+    margin: 2.5rem auto;
+    padding: 0;
 }
 
 .button__link {
     display: inline-block;
     font-family: 'Barlow', sans-serif;
-    font-size: 2rem;
+    font-size: 1.25rem;
     font-weight: 700;
     color: #ffffff;
-    --bs-gutter-y: 0;
-    margin-bottom: 1.6rem;
-    padding: 1.6rem 3.2rem;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
     border-radius: 8px;
     width: 100%;
     text-align: center;
@@ -800,11 +760,11 @@ p {
 /* Sección Cuadros */
 
 .cuadros {
-    margin: 3.2rem 0;
+    margin: 2rem 0;
 }
 
 .cuadros>div {
-    margin: 0.8rem 0;
+    margin: 0.5rem 0;
 }
 
 /* ------------------ Sección Noticia Destacada 2 ------------------ */
@@ -817,7 +777,7 @@ p {
     background-size: cover;
     border-radius: 8px;
     height: 739px;
-    margin: 2.4rem 0;
+    margin: 1.5rem 0;
 }
 
 .informe>h3 {
@@ -830,7 +790,7 @@ p {
 
 .detalles__informe>h2,
 .detalles__informe>p {
-    padding: 1.6rem 0;
+    padding: 1rem 0;
     width: 50%;
 }
 
@@ -862,7 +822,7 @@ p {
 
 .footer__container {
     display: flex;
-    padding: 4.8rem 1.6rem;
+    padding: 3rem 1rem;
 }
 
 .footer__logo {
@@ -871,7 +831,7 @@ p {
 }
 
 .footer__logo__titulo {
-    padding: 3.2rem 0 2rem 0;
+    padding: 2rem 0 2rem 0;
 }
 
 .footer__logo__titulo p {
@@ -880,19 +840,19 @@ p {
 }
 
 .footer__redessociales a {
-    padding: 0 0.8rem;
+    padding: 0 0.5rem;
 }
 
 .footer__links {
-    margin: 2.4rem 0rem 0 2.4rem;
+    margin: 1.5rem 0rem 0 1.5rem;
 }
 
 .footer__ul__1 li {
-    padding: 0.4rem;
+    padding: 0.25rem;
 }
 
 .footer__ul__1 li a {
-    font-size: 2rem;
+    font-size: 1.25rem;
     color: #282827;
 }
 
@@ -902,11 +862,11 @@ p {
 }
 
 .footer__ul__2 li {
-    padding: 0.4rem;
+    padding: 0.25rem;
 }
 
 .footer__ul__2 li a {
-    font-size: 2rem;
+    font-size: 1.25rem;
     color: #282827;
 }
 
@@ -937,19 +897,19 @@ p {
 /* ------------------ Sección SinglePost ------------------ */
 
 .noticia__singlepost p {
-    font-size: 2rem;
+    font-size: 1.25rem;
 }
 
 .noticia__singlepost {
-    padding: 1.6rem;
+    padding: 1rem;
 }
 
 .noticia__singlepost>div h1 {
-    padding: 5.6rem 0 1.6rem 0;
+    padding: 5.6rem 0 1rem 0;
 }
 
 .noticia__singlepost>h3 {
-    padding: 3.2rem 0;
+    padding: 2rem 0;
     line-height: 54.4px
 }
 
@@ -958,11 +918,11 @@ p {
 }
 
 .fuente div p {
-    font-size: 1.8rem;
+    font-size: 1.125rem;
 }
 
 .etiquetas {
-    padding: 3.2rem 0;
+    padding: 2rem 0;
     display: flex;
     align-items: center;
 }
@@ -971,9 +931,9 @@ p {
     border: 1.5px solid #71717A;
     border-radius: 50px;
     font-weight: 500;
-    font-size: 1.6rem;
-    padding: 0.8rem;
-    margin: 0 0.8rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
 }
 
 .noticia__relacionada__img {
@@ -984,20 +944,20 @@ p {
 }
 
 .noticia__relacionada__texto {
-    padding: 2.4rem;
+    padding: 1.5rem;
     border-radius: 0 8px 8px 0;
 }
 
 .noticia__relacionada__texto>h3:nth-child(2) {
-    padding: 1.6rem 0;
+    padding: 1rem 0;
 }
 
 .noticia__relacionada__texto>p {
-    padding-bottom: 1.6rem;
+    padding-bottom: 1rem;
 }
 
 .noticia__relacionada__texto p {
-    font-size: 1.6rem;
+    font-size: 1rem;
 }
 
 .contacto__icons__desktop {
@@ -1011,24 +971,24 @@ p {
 .contacto__icons {
     display: flex;
     align-items: center;
-    margin: 3.2rem 0;
+    margin: 2rem 0;
 }
 
 .contacto__icons__desktop img {
-    padding: 1.6rem 0;
+    padding: 1rem 0;
 }
 
 .contacto__icons img {
-    padding: 0 0.8rem;
+    padding: 0 0.5rem;
 }
 
 .contacto__icons a:nth-child(3) {
-    padding-right: 0.8rem;
+    padding-right: 0.5rem;
 }
 
 .contacto__icons a:nth-child(4) {
     border-left: 1px #282827 solid;
-    padding-left: 0.8rem;
+    padding-left: 0.5rem;
 }
 
 .fb-comments__css {
@@ -1038,16 +998,16 @@ p {
 }
 
 .titulo__noticias__cuadros {
-    padding: 3.2rem 0;
+    padding: 2rem 0;
 }
 
 .titulo__noticias__cuadros>h1,
 .titulo__noticias__cuadros>h3 {
-    padding: 0 0 2.4rem 0.8rem;
+    padding: 0 0 1.5rem 0.5rem;
 }
 
 .titulo__noticias__cuadros>p {
-    padding-left: 0.8rem;
+    padding-left: 0.5rem;
 }
 
 .titulo__noticias__cuadros>h3 {
@@ -1057,8 +1017,8 @@ p {
 /* ------------------ Sección Señal U ------------------ */
 
 .señal__u__container {
-    margin: 3.2rem 0;
-    padding: 5.6rem 0;
+    margin: 1rem 0;
+    padding: 4rem 0;
 }
 
 .señalu__bg {
@@ -1066,13 +1026,13 @@ p {
 }
 
 .señal__u__logo {
-    padding-bottom: 1.6rem;
+    padding-bottom: 1rem;
 }
 
 .links__señal__u {
     color: #ffffff;
     text-transform: uppercase;
-    font-size: 3.2rem;
+    font-size: 2rem;
 }
 
 .links__señal__u:hover {
@@ -1082,7 +1042,7 @@ p {
 .bg__texto__señal__u {
     background-color: rgb(22, 22, 22, 0.25);
     backdrop-filter: blur(2px);
-    padding: 1.6rem;
+    padding: 1rem;
 }
 
 .video__señal__u {
@@ -1092,11 +1052,11 @@ p {
 }
 
 .producciones__container__1>h1 {
-    padding: 1.6rem 0;
+    padding: 1rem 0;
 }
 
 .producciones__container__1>h3 {
-    padding: 1.6rem 0;
+    padding: 1rem 0;
 }
 
 /* ---- ----- ----- Contenedor Titulo y Controles del carousel (desktop) ----- ----- ----- */
@@ -1120,7 +1080,7 @@ p {
     cursor: pointer;
     border: none;
     margin-right: 2px;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
 }
 
 .contenedor-titulo-controles .indicadores button:hover,
@@ -1248,7 +1208,7 @@ p {
 .links__radio__u {
     color: #ffffff;
     text-transform: uppercase;
-    font-size: 3.2rem;
+    font-size: 2rem;
 }
 
 .links__radio__u:hover {
@@ -1257,14 +1217,14 @@ p {
 
 .downloadapp {
     background-color: #47CCE2;
-    padding: 1.6rem;
+    padding: 1rem;
     transition: width 1s, height 1s, transform 0.35s;
 }
 
 .downloadapp p {
     color: #ececec;
     font-weight: 700;
-    font-size: 1.8rem;
+    font-size: 1.125rem;
 }
 
 /* ----------------------- Radio U: Podcast ----------------------- */
@@ -1272,7 +1232,7 @@ p {
 .border__categorias {
     border: 3px solid #EEC632;
     border-radius: 8px;
-    padding: 2.4rem;
+    padding: 1.5rem;
 }
 
 .container__podcast {
@@ -1281,17 +1241,17 @@ p {
 
 .container__podcast>.col-lg-4 {
     width: 32%;
-    margin: 1.6rem 0;
+    margin: 1rem 0;
 }
 
 /* ------------------ Sección U Deportivo ------------------ */
 
 .video__u__deportivo__container {
-    padding: 4.8rem 0;
+    padding: 3rem 0;
 }
 
 .video__u__deportivo__comentarios {
-    padding: 4.8rem 0;
+    padding: 3rem 0;
 }
 
 .video__u__deportivo__container iframe {
@@ -1300,7 +1260,7 @@ p {
 }
 
 .title__suplementario {
-    padding: 3.2rem 0.75rem 0 0;
+    padding: 2rem 0.75rem 0 0;
 }
 
 .title__suplementario>h1 {
@@ -1318,7 +1278,7 @@ p {
 
 .uacademico__container {
     justify-content: space-between;
-    padding: 3.2rem 0;
+    padding: 2rem 0;
 }
 
 .logo__u__academico__container {
@@ -1348,15 +1308,15 @@ p {
 }
 
 .texto__noticias__uacademico>h3 {
-    padding: 0 1.6rem;
+    padding: 0 1rem;
 }
 
 .texto__noticias__uacademico>div {
-    padding: 0 1.6rem 1.6rem 1.6rem;
+    padding: 0 1rem 1rem 1rem;
 }
 
 .texto__noticias__uacademico>p {
-    padding: 0 1.6rem;
+    padding: 0 1rem;
 }
 
 /* Estilos para las 3 noticias en filas */
@@ -1373,11 +1333,11 @@ p {
 }
 
 .texto__noticias__uacademico__2>p {
-    padding: 0 1.6rem 1.2rem 1.6rem;
+    padding: 0 1rem 0.75rem 1rem;
 }
 
 .texto__noticias__uacademico__2>div {
-    padding: 0 1.6rem;
+    padding: 0 1rem;
 }
 
 /* Form U Academico */
@@ -1390,8 +1350,8 @@ p {
 .button__u__academico__verde {
     background-color: #5AB05A;
     border-radius: 8px;
-    padding: 1.6rem 3.2rem;
-    margin: 2.4rem 0;
+    padding: 1rem 2rem;
+    margin: 1.5rem 0;
     display: inline-block;
 }
 
@@ -1409,26 +1369,26 @@ p {
     display: flex;
     align-items: center;
     border-radius: 24px;
-    padding: 1.6rem;
+    padding: 1rem;
     background-color: #ffffff;
 }
 
 .form-control-uacademico {
     border: none;
-    font-size: 2.4rem;
+    font-size: 1.5rem;
 }
 
 .form-control-uacademico::placeholder {
     vertical-align: text-bottom;
     font-family: 'Barlow', sans-serif;
-    font-size: 2.4rem;
+    font-size: 1.5rem;
 }
 
 .button__u__academico {
-    font-size: 2.4rem;
+    font-size: 1.5rem;
     display: inline-block;
-    padding: 2rem 3.2rem;
-    margin-left: 0.8rem;
+    padding: 1.25rem 2rem;
+    margin-left: 0.5rem;
     border-radius: 24px;
     background-color: #ffffff;
     font-family: 'Barlow', sans-serif;
@@ -1438,7 +1398,7 @@ p {
 }
 
 .opciones__categorias {
-    font-size: 2.4rem;
+    font-size: 1.5rem;
 }
 
 /* ------------------ Sección Listado Categorias ------------------ */
@@ -1446,7 +1406,7 @@ p {
 
 .main__noticia {
     height: 100vh;
-    margin-top: 3.2rem;
+    margin-top: 2rem;
 }
 
 .titulo__listado__categorias {
@@ -1454,7 +1414,7 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 5.6rem;
+    padding-bottom: 3.5rem;
     height: 100%;
 }
 
@@ -1470,11 +1430,11 @@ p {
 
 .titulo__listado__categorias>h1 {
     font-size: 56px;
-    padding: 4rem 0;
+    padding: 2.5rem 0;
 }
 
 .titulo__listado__categorias>p {
-    font-size: 2rem;
+    font-size: 1.25rem;
 }
 
 /* ------------------ Sección Resultado Búsqueda ------------------ */
@@ -1518,21 +1478,21 @@ p {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding: 1.6rem;
+    padding: 1rem;
 }
 
 .texto__cuadros__edicionu>h5 {
-    font-size: 2rem;
+    font-size: 1.25rem;
 }
 
 .texto__cuadros__edicionu>h5,
 .texto__cuadros__edicionu>p {
-    padding-bottom: 1.6rem;
+    padding-bottom: 1rem;
 }
 
 .paginas a {
-    font-size: 2rem;
-    margin: 0 1.6rem;
+    font-size: 1.25rem;
+    margin: 0 1rem;
 }
 
 .pagina__activa {
@@ -1540,12 +1500,12 @@ p {
 }
 
 .previous {
-    font-size: 2rem;
+    font-size: 1.25rem;
     color: #A1A1AA;
 }
 
 .next {
-    font-size: 2rem;
+    font-size: 1.25rem;
     color: #47CCE2;
 }
 
@@ -1554,15 +1514,15 @@ p {
 /* El Canal */
 
 .canal {
-    padding: 3.2rem 0;
+    padding: 2rem 0;
     color: #EA5830;
-    font-size: 5.6rem;
+    font-size: 3.5rem;
     text-align: center;
 }
 
 .texto__señal__u p {
-    font-size: 2rem;
-    padding: 0.8rem 0;
+    font-size: 1.25rem;
+    padding: 0.5rem 0;
 }
 
 .lista__propuestas,
@@ -1571,17 +1531,17 @@ p {
 }
 
 .lista__propuestas {
-    padding: 1.6rem 3.2rem;
+    padding: 1rem 2rem;
 }
 
 .lista__propuestas p {
-    font-size: 2rem;
+    font-size: 1.25rem;
 }
 
 /* Presentaciones de proyectos */
 
 .presentacion__container {
-    padding: 4.8rem 0;
+    padding: 3rem 0;
 }
 
 .texto__formulario {
@@ -1589,7 +1549,7 @@ p {
 }
 
 .button__presentaciones {
-    padding: 1.6rem;
+    padding: 1rem;
 }
 
 /* Programación: Señal U */
@@ -1597,15 +1557,15 @@ p {
 .radio__container {
     display: flex;
     justify-content: flex-end;
-    padding-bottom: 2.4rem;
+    padding-bottom: 1.5rem;
 }
 
 .links__radio li {
-    padding: 0 0.8rem;
+    padding: 0 0.5rem;
 }
 
 .links__radio li a {
-    font-size: 2.4rem;
+    font-size: 1.5rem;
 }
 
 .link__radio__active {
@@ -1613,7 +1573,7 @@ p {
 }
 
 .titulo__noticias__cuadros>p {
-    font-size: 2.4rem;
+    font-size: 1.5rem;
 }
 
 .img__carousel__señal__u {
@@ -1641,7 +1601,7 @@ p {
     max-width: 100%;
     width: 400px;
     height: 270px;
-    padding: 3.2rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -1650,9 +1610,9 @@ p {
 }
 
 .duracion {
-    font-size: 1.8rem;
+    font-size: 1.125rem;
     border-radius: 4px;
-    padding: 0.4rem;
+    padding: 0.25rem;
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.75);
 }
@@ -1688,7 +1648,7 @@ p {
 
 .horarios__subcontainer h4,
 .horarios__subcontainer h5 {
-    font-size: 1.6rem;
+    font-size: 1rem;
     font-weight: 700;
 }
 
@@ -1712,7 +1672,7 @@ p {
     align-items: center;
     width: 169px;
     height: 67px;
-    padding: 1.6rem 0.8rem;
+    padding: 1rem 0.5rem;
     border: 1px solid #cecece;
 }
 
@@ -1747,13 +1707,13 @@ p {
 /* Nuestro Staff */
 
 .staff {
-    padding: 3.2rem 0;
-    font-size: 5.6rem;
+    padding: 2rem 0;
+    font-size: 3.5rem;
     text-align: center;
 }
 
 .lista__staff {
-    padding-top: 1.6rem;
+    padding-top: 1rem;
     padding-left: 3.2rem;
 }
 
@@ -1762,7 +1722,7 @@ p {
 }
 
 .lista__staff li p {
-    font-size: 2rem;
+    font-size: 1.25rem;
 }
 
 /* ---- ----- ----- Media Queries ----- ----- ----- */
@@ -1777,7 +1737,7 @@ p {
         left: 0;
         right: 0;
         z-index: 1030;
-        padding: 0.8rem 1.6rem;
+        padding: 0.5rem 1rem;
         background-color: #ffffff;
         box-shadow: rgba(3, 3, 3, 0.2) 0px 3px 8px
     }
@@ -1809,36 +1769,36 @@ p {
     }
 
     .fecha__calendario__nav {
-        margin-left: 2rem;
+        margin-left: 1.25rem;
     }
 
     .border__buscador {
-        margin: 1.6rem 0;
+        margin: 1rem 0;
     }
 
     .links__nav>.nav-item {
-        padding: 1.2rem 0;
+        padding: 0.75rem 0;
     }
 
     .links__nav .nav-item>.nav-link {
-        font-size: 2rem;
+        font-size: 1.25rem;
         padding: 0;
     }
 
     /* ------------------ Main ------------------ */
 
     main {
-        margin-top: 5.6rem;
+        margin-top: 3.5rem;
     }
 
     .noticia__destacada {
-        margin: 2.4rem 0 0 0;
+        margin: 1.5rem 0 0 0;
         height: 390px;
     }
 
     .otras__noticias {
         padding: 0;
-        margin: 1rem 0;
+        margin: 0.75rem 0;
     }
 
     .covid__icon {
@@ -1850,15 +1810,15 @@ p {
     }
 
     .covid__button {
-        padding: 1.6rem;
+        padding: 1rem;
     }
 
     .covid__button>p {
-        font-size: 1.6rem;
+        font-size: 1rem;
     }
 
     .titulo__redes {
-        font-size: 2.4rem;
+        font-size: 1.5rem;
     }
 
     /* ------------------ Sección Actualidad y Podcast ------------------ */
@@ -1884,7 +1844,7 @@ p {
     }
 
     .podcast__container>h1 {
-        padding-bottom: 0.8rem;
+        padding-bottom: 0.5rem;
     }
 
     /* ------------------ Sección Noticias con menú de color de fondo ------------------ */
@@ -1894,22 +1854,21 @@ p {
     }
 
     .noticia__col__1>h3 {
-        padding-top: 1.6rem;
+        padding-top: 1rem;
     }
 
     .noticia__col__1>p,
     .noticia__col__1>.fecha__noticia {
-        padding: 0.8rem 1.6rem;
+        padding: 0.5rem 1rem;
     }
 
     .noticia__col__2>div {
-        margin-top: 1.6rem;
+        margin-top: 1rem;
         width: 100%;
     }
 
-    .seccion__noticias__2 .col-lg-4:nth-child(2),
-    .seccion__noticias__2 .col-lg-4:nth-child(3) {
-        margin-top: 1.6rem;
+    .seccion__noticias__2 .col-lg-4{
+        margin: 0.5rem 0;
     }
 
     /* ------------------ Sección Links Internos ------------------ */
@@ -1970,14 +1929,14 @@ p {
     }
 
     .etiquetas a {
-        margin: 0.8rem;
+        margin: 0.5rem;
     }
 
     /* ------------------ Sección Señal U ------------------ */
 
     .video__señal__u {
         height: 360px;
-        margin: 1.6rem 0;
+        margin: 1rem 0;
     }
 
     /* Carousel de Radio U */
@@ -1989,7 +1948,7 @@ p {
     }
 
     .carousel__container {
-        margin: 3.2rem 0;
+        margin: 2rem 0;
     }
 
 
@@ -1998,7 +1957,7 @@ p {
     .border__categorias {
         border: 3px solid #EEC632;
         border-radius: 8px;
-        padding: 2.4rem;
+        padding: 1.5rem;
     }
 
     .container__podcast {
@@ -2012,7 +1971,7 @@ p {
     /* ------------------ Sección U Deportivo ------------------ */
 
     .video__u__deportivo__container {
-        padding: 3.2rem 0;
+        padding: 2rem 0;
     }
 
     .video__u__deportivo__container iframe {
@@ -2036,23 +1995,23 @@ p {
     }
 
     .texto__noticias__uacademico>h3 {
-        padding: 2.4rem 1.6rem 0 1.6rem;
+        padding: 1.5rem 1rem 0 1rem;
     }
 
     .texto__noticias__uacademico>div {
-        padding: 0 1.6rem 1.6rem 1.6rem;
+        padding: 0 1rem 1rem 1rem;
     }
 
     .texto__noticias__uacademico>p {
-        padding: 1.6rem;
+        padding: 1rem;
     }
 
     .noticias__row__academico .row:first-child {
-        margin-top: 1.6rem;
+        margin-top: 1rem;
     }
 
     .noticias__row__academico .row:nth-child(2) {
-        margin: 1.6rem 0;
+        margin: 1rem 0;
     }
 
     .texto__noticias__uacademico__2 {
@@ -2060,27 +2019,27 @@ p {
     }
 
     .texto__noticias__uacademico__2>p {
-        padding: 1.6rem 1.6rem 0 1.6rem;
+        padding: 1rem 1rem 0 1rem;
     }
 
     .texto__noticias__uacademico__2>div {
-        padding: 1.6rem;
+        padding: 1rem;
     }
 
     .button__categorias {
-        margin-top: 2.4rem;
+        margin-top: 1.5rem;
         justify-content: center;
     }
 
     .form-control-uacademico {
-        font-size: 1.8rem;
-        padding-left: 2.4rem;
+        font-size: 1.125rem;
+        padding-left: 1.5rem;
     }
 
     .form-control-uacademico::placeholder,
     .button__u__academico,
     .opciones__categorias {
-        font-size: 1.8rem;
+        font-size: 1.125rem;
     }
 
     /* ----------------------- Listado Categorias ----------------------- */
@@ -2092,7 +2051,7 @@ p {
     }
 
     .titulo__listado__categorias {
-        padding: 1.6rem;
+        padding: 1rem;
     }
 
     .titulo__listado__categorias>h1,
@@ -2102,23 +2061,23 @@ p {
     }
 
     .titulo__listado__categorias>h2 {
-        font-size: 2rem;
+        font-size: 1.25rem;
     }
 
     .titulo__listado__categorias>h1 {
         font-size: 40px;
-        padding: 4rem 0;
+        padding: 2.5rem 0;
     }
 
     .titulo__listado__categorias>p {
-        font-size: 1.8rem;
+        font-size: 1.125rem;
     }
 
     /* ------------------ Sección Resultado Búsqueda ------------------ */
 
     .button__categorias-ordenar {
         justify-content: space-evenly;
-        padding: 3.2rem 0;
+        padding: 2rem 0;
     }
 
     /* ------------------ Sección Edicion U ------------------ */
@@ -2136,17 +2095,17 @@ p {
     }
 
     .paginas a {
-        font-size: 1.6rem;
-        margin: 0 0.8rem;
+        font-size: 1rem;
+        margin: 0 0.5rem;
     }
 
     .previous {
-        font-size: 1.6rem;
+        font-size: 1rem;
         color: #A1A1AA;
     }
 
     .next {
-        font-size: 1.6rem;
+        font-size: 1rem;
         color: #47CCE2;
     }
 
@@ -2159,11 +2118,11 @@ p {
     }
 
     .links__radio li a {
-        font-size: 1.8rem;
+        font-size: 1.125rem;
     }
 
     .titulo__noticias__cuadros>p {
-        font-size: 1.8rem;
+        font-size: 1.125rem;
     }
 
     /* Grilla Horaria */
@@ -2191,9 +2150,9 @@ p {
 
     .redes a {
         border: none;
-        font-size: 1.6rem;
-        padding: 0.8rem;
-        margin: 0.8rem 0
+        font-size: 1rem;
+        padding: 0.5rem;
+        margin: 0.5rem 0
     }
 
     /* Carrousel Noticias */
@@ -2209,18 +2168,18 @@ p {
     }
 
     .carrousel__noticia__container {
-        padding: 1.6rem 3.2rem;
+        padding: 1rem 2rem;
     }
 
     .title__carrousel {
-        padding: 1.6rem 2.4rem 0 2.4rem;
+        padding: 1rem 1.5rem 0 1.5rem;
         color: #ffffff;
     }
 
     .img__carrousel {
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
-        padding: 1.6rem 2.4rem 0 2.4rem;
+        padding: 1rem 1.5rem 0 1.5rem;
         width: 100%;
         height: 180px;
         object-fit: cover;
@@ -2230,12 +2189,12 @@ p {
         background-color: #ffffff;
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
-        padding: 2.4rem;
-        margin: 0 2.4rem 3.2rem 2.4rem;
+        padding: 1.5rem;
+        margin: 0 1.5rem 2rem 1.5rem;
     }
 
     .noticia__carrousel>h4 {
-        padding: 1.6rem 0;
+        padding: 1rem 0;
     }
 
     .button__next__icon__1,
@@ -2259,7 +2218,7 @@ p {
     /* ------------------ Sección U Deportivo ------------------ */
 
     .video__u__deportivo__container {
-        padding: 2.4rem 0;
+        padding: 1.5rem 0;
     }
 
     .video__u__deportivo__container iframe {
